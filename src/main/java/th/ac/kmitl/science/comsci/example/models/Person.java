@@ -4,19 +4,10 @@ public abstract class Person {
     
     private String id;  
     private String globalId; 
-    private String name;  
+    private String name; 
     private String taxId;  
-    private String uriId;  
-    private String email;
+    private String uriId;
     
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
     public String getUriId() {
         return uriId;
     }
