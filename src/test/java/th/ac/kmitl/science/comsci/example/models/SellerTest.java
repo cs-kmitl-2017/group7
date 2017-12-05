@@ -77,4 +77,5 @@ public class SellerTest {
         
         assert(sellerInitailObj.equals(sellerCompareObj));
     }
+    
 }
