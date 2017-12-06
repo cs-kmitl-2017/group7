@@ -5,7 +5,7 @@ import org.junit.Test;
 public class TraderTest {
     
     @Test
-    public void creatSellerObjectCorrectly(){
+    public void creatTraderObjectCorrectly(){
         String name = "Sutit Puyta";
         String globalId = "GGIM12345";
         String taxId = "TAX55612";
@@ -20,7 +20,7 @@ public class TraderTest {
     }
     
     @Test
-    public void setAttributeSellerCorrectly(){
+    public void setAttributeTraderCorrectly(){
         String name = "Sutit Puyta";
         String globalId = "GGIM12345";
         String taxId = "TAX55612";
@@ -45,7 +45,7 @@ public class TraderTest {
     }
     
     @Test
-    public void canCompareNullSellerObject(){
+    public void canCompareNullTraderObject(){
         String name = "";
         String globalId = "";
         String taxId = "";
@@ -58,7 +58,7 @@ public class TraderTest {
     }
     
     @Test
-    public void canCompareEqualsSellerObject(){
+    public void canCompareEqualsTraderObject(){
         String name = "Sutit Puyta";
         String globalId = "GGIM12345";
         String taxId = "TAX55612";
