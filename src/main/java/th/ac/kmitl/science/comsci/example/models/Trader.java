@@ -1,8 +1,8 @@
 package th.ac.kmitl.science.comsci.example.models;
 
-public class Seller extends Person{
+public class Trader extends Person{
     
-    public Seller(String name, 
+    public Trader(String name, 
                   String globalId, 
                   String taxId,
                   String uriId) {
@@ -14,9 +14,9 @@ public class Seller extends Person{
 
     @Override
     public boolean equals(Object obj) {
-        Seller other = (Seller) obj;
+        Trader other = (Trader) obj;
         
-        return (obj instanceof Seller) && 
+        return (obj instanceof Trader) && 
                 getName().equals(other.getName()) &&
                 getGlobalId().equals(other.getGlobalId()) &&
                 getTaxId().equals(other.getTaxId()) &&
