@@ -18,10 +18,10 @@ public class UniversalCommunicationTest {
     @Test
     public void setUriIdUniversalCommunicationOjectCorrectly(){
         UniversalCommunication initailCommunication = 
-                UniversalCommunicationMock.getUniversalCommunication();
+                UniversalCommunicationMock.generateUniversalCommunication();
         
         UniversalCommunication newCommunication = 
-                UniversalCommunicationMock.getNewUniversalCommunication();
+                UniversalCommunicationMock.generateNewUniversalCommunication();
         
         assertFalse(initailCommunication.equals(newCommunication));
     }
@@ -29,10 +29,10 @@ public class UniversalCommunicationTest {
     @Test
     public void canCompareUniversalCommunicationOject(){
         UniversalCommunication initailCommunication = 
-                UniversalCommunicationMock.getUniversalCommunication();
+                UniversalCommunicationMock.generateUniversalCommunication();
         
         UniversalCommunication compareCommunication = 
-                UniversalCommunicationMock.getUniversalCommunication();
+                UniversalCommunicationMock.generateUniversalCommunication();
         
         assert(initailCommunication.equals(compareCommunication));
     }
