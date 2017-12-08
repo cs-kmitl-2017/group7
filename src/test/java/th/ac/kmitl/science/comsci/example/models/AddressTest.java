@@ -52,7 +52,7 @@ public class AddressTest {
     
     @Test
     public void canSetAttributeAddress(){      
-        Address addressObject = new Address();
+        Address addressObject = AddressMock.generateAddressMock();
         
         addressObject.setPostCode(AddressMock.postCode);
         addressObject.setBuildingName(AddressMock.buildingName);
