@@ -7,16 +7,15 @@ public class TradeContactFactoryTest {
     
     @Test
     public void createUniversalCommunicationObjectCorrectly(){
-        TradeContact universalCommunication = TradeContactFactory
+        UniversalCommunication universalCommunication = TradeContactFactory
                 .createTraderContact(UniversalCommunicationMock.uriId);
         
-        assert(universalCommunication instanceof TradeContact);
         assert(universalCommunication instanceof UniversalCommunication);
     }
     
     @Test
     public void createObjectAndSetAttributeUriIdCorrectly(){
-        TradeContact universalCommunication = TradeContactFactory
+        UniversalCommunication universalCommunication = TradeContactFactory
                 .createTraderContact(UniversalCommunicationMock.uriId);
         
         assert(universalCommunication.getUriId()
