@@ -22,7 +22,7 @@ public class AddressMock {
         
     private AddressMock(){
             
-    }
+    } 
          
     public static Address generateAddressMock(){
         if(addressInstanceMock == null){
