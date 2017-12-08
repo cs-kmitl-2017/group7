@@ -1,6 +1,16 @@
 package th.ac.kmitl.science.comsci.example.models;
 
-public class UniversalCommunication extends TradeContact{
+public class UniversalCommunication{
+    
+    private String uriId;
+
+    public String getUriId() {
+        return uriId;
+    }
+
+    public void setUriId(String uriId) {
+        this.uriId = uriId;
+    }
     
     public UniversalCommunication(String uriId){
         setUriId(uriId);
@@ -8,9 +18,9 @@ public class UniversalCommunication extends TradeContact{
     
     @Override
     public boolean equals(Object obj) {
-        TradeContact other = (TradeContact) obj;
+        UniversalCommunication other = (UniversalCommunication) obj;
         
-        return (obj instanceof TradeContact) && getUriId().equals(other.getUriId());      
+        return (obj instanceof UniversalCommunication) && getUriId().equals(other.getUriId());      
     }
 
     @Override
