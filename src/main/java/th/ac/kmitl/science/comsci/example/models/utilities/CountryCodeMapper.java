@@ -25,7 +25,7 @@ public class CountryCodeMapper implements Mapper {
             case "สหรัฐอเมริกา":
                 return 684;
             default:
-                throw new NotFoundMappingException("Not found country name to map");
+                throw new NotFoundMappingException("Country name not found in CountryCodeMapper.");
         }
     }
 }
