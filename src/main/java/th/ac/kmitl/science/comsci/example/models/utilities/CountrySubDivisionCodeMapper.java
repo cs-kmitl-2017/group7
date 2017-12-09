@@ -4,7 +4,6 @@ public class CountrySubDivisionCodeMapper implements Mapper {
 
     @Override
     public int map(String dataToMap) throws NotFoundMappingException {
-
         switch (dataToMap) {
             case "กรุงเทพมหานคร":
                 return 1;

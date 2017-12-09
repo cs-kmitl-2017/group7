@@ -7,7 +7,7 @@ import th.ac.kmitl.science.comsci.example.models.utilities.CountrySubDivisionCod
 public class CountrySubDivisionCodeMapperTest {
 
     @Test
-    public void CountrySubDivisionCodeMapperCorrectly() throws NotFoundMappingException {
+    public void countrySubDivisionCodeMapperCorrectly() throws NotFoundMappingException {
         CountrySubDivisionCodeMapper countrySubDivisionCodeMapper
                 = new CountrySubDivisionCodeMapper();
 
