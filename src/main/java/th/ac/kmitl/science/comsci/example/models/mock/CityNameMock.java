@@ -14,4 +14,4 @@ public class CityNameMock {
     public static int lakSiId = 1041;
     public static int watthanaId = 1039;
     
-}
+} 
