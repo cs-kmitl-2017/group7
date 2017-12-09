@@ -1,19 +1,28 @@
 package th.ac.kmitl.science.comsci.example.models;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public abstract class Person {
     
-    private String id;  
+    private String id;
     private String globalId; 
     private String name; 
     private String taxId;  
-    private String uriId;
-    
-    public String getUriId() {
-        return uriId;
-    }
+    private Address address;
+    private List<UniversalCommunication> universalCommunication;
 
-    public void setUriId(String uriId) {
-        this.uriId = uriId;
+    public Person() {
+        address = new Address();
+        universalCommunication = new ArrayList<>();
+    }
+    
+    public List<UniversalCommunication> getUniversalCommunication() {
+        return universalCommunication;
+    }
+ 
+    public Address getAddress() {
+        return address;
     }
 
     public String getTaxId() {

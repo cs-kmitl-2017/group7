@@ -2,25 +2,26 @@ package th.ac.kmitl.science.comsci.example.models;
 
 public class Trader extends Person{
     
-    public Trader(String name, 
+    public Trader(String id,
+                  String name, 
                   String globalId, 
-                  String taxId,
-                  String uriId) {
+                  String taxId) {
+        super();
+        setId(id);
         setName(name);
         setGlobalId(globalId);
         setTaxId(taxId);
-        setUriId(uriId);
     }
-
+    
     @Override
     public boolean equals(Object obj) {
-        Trader other = (Trader) obj;
+        Trader trader = (Trader) obj;
         
-        return (obj instanceof Trader) && 
-                getName().equals(other.getName()) &&
-                getGlobalId().equals(other.getGlobalId()) &&
-                getTaxId().equals(other.getTaxId()) &&
-                getUriId().equals(other.getUriId());
+        return (obj instanceof Trader) &&
+                getId().equals(trader.getId()) &&
+                getName().equals(trader.getName()) &&
+                getGlobalId().equals(trader.getGlobalId()) &&
+                getTaxId().equals(trader.getTaxId());
     }
 
     @Override

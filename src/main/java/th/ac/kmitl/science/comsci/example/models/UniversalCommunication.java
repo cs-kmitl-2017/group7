@@ -13,7 +13,7 @@ public class UniversalCommunication{
     }
     
     public UniversalCommunication(String uriId){
-        setUriId(uriId);
+        this.uriId = uriId;
     }
     
     @Override
