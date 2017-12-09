@@ -1,6 +1,7 @@
 $('#buyerType').hide();
 $('#sellerType').hide();
 $('#address').hide();
+
 function showField(isClick) {
     var whatType = document.getElementById("userTypeRadio").checked;
     if (isClick) {
@@ -13,6 +14,7 @@ function showField(isClick) {
     }
     isClick = false;
 }
+
 function showAddress(isShow) {
     if (isShow) {
         $('#address').show();
