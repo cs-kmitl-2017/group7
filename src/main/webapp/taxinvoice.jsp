@@ -30,7 +30,7 @@
                         </fieldset>
                         <hr>
                         <div class="text-center">
-                            <button onClick="showField(true)" type="button" class="btn btn-success">Next</button> 
+                            <button onClick="showFieldUserType(true)" type="button" class="btn btn-success">Next</button> 
                         </div>
                     </div>
                     <div id="buyerType">
