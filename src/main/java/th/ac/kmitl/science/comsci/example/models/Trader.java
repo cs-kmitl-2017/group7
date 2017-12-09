@@ -15,13 +15,13 @@ public class Trader extends Person{
     
     @Override
     public boolean equals(Object obj) {
-        Trader other = (Trader) obj;
+        Trader trader = (Trader) obj;
         
         return (obj instanceof Trader) &&
-                getId().equals(other.getId()) &&
-                getName().equals(other.getName()) &&
-                getGlobalId().equals(other.getGlobalId()) &&
-                getTaxId().equals(other.getTaxId());
+                getId().equals(trader.getId()) &&
+                getName().equals(trader.getName()) &&
+                getGlobalId().equals(trader.getGlobalId()) &&
+                getTaxId().equals(trader.getTaxId());
     }
 
     @Override
