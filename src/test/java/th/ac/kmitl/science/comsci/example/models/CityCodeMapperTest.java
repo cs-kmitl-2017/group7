@@ -3,24 +3,18 @@ package th.ac.kmitl.science.comsci.example.models;
 import org.junit.Test;
 import th.ac.kmitl.science.comsci.example.models.utilities.CityCodeMapper;
 import th.ac.kmitl.science.comsci.example.models.utilities.NotFoundMappingException;
-import th.ac.kmitl.science.comsci.example.models.mock.CityCodeMapperMock;
 
 public class CityCodeMapperTest {
     
     @Test
     public void mapNameToIdCorrectly() throws NotFoundMappingException{
-        CityCodeMapper cityNameMapper = new CityCodeMapper();
+        CityCodeMapper cityCodeMapper = new CityCodeMapper();
         
-        assert(cityNameMapper.map(CityCodeMapperMock.lakSi) ==
-                CityCodeMapperMock.lakSiId);
-        assert(cityNameMapper.map(CityCodeMapperMock.latKrabang) == 
-                CityCodeMapperMock.latKrabangId);
-        assert(cityNameMapper.map(CityCodeMapperMock.phayaThai) == 
-                CityCodeMapperMock.phayaThaiId);
-        assert(cityNameMapper.map(CityCodeMapperMock.sathon) == 
-                CityCodeMapperMock.sathonId);
-        assert(cityNameMapper.map(CityCodeMapperMock.watthana) == 
-                CityCodeMapperMock.watthanaId);       
+        assert(cityCodeMapper.map("หลักสี่") == 1041);
+        assert(cityCodeMapper.map("ลาดกระบัง") == 1011);
+        assert(cityCodeMapper.map("พญาไท") == 1014);
+        assert(cityCodeMapper.map("สาทร") == 1028);
+        assert(cityCodeMapper.map("วัฒนา") == 1039);       
     }
     
 }
