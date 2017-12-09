@@ -33,7 +33,6 @@
                             <button onClick="showField(true)" type="button" class="btn btn-success">Next</button> 
                         </div>
                     </div>
-
                     <div id="buyerType">
                         <div class="form-group row">
                             <div class="col-4 col-form-label">รหัสผู้ค้า</div>
@@ -204,9 +203,7 @@
                                     </c:forEach>
                                 </div>
                             </div>
-
                         </div>
-
                         <hr>
                         <div class="text-center">
                             <button type="button" class="btn btn-success">Send</button> 

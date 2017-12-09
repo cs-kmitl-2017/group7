@@ -1,4 +1,3 @@
-
 $('#buyerType').hide();
 $('#sellerType').hide();
 $('#address').hide();
@@ -11,11 +10,9 @@ function showField(isClick) {
         } else {
             $('#buyerType').show();
         }
-
     }
     isClick = false;
 }
-
 function showAddress(isShow) {
     if (isShow) {
         $('#address').show();
