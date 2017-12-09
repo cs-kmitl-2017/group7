@@ -6,33 +6,34 @@ import th.ac.kmitl.science.comsci.example.models.mock.ProductMock;
 public class ProductTest {
 
     @Test
-    public void createProductObjectCorrectly() {
-        Product productObject = new Product(
+    public void createProductCorrectly() {
+        Product product = new Product(
                 ProductMock.id,
                 ProductMock.globalId,
                 ProductMock.name);
-
-        assert (productObject.getId()
+        
+        assert (product.getId()
                 .equals(ProductMock.id));
-        assert (productObject.getGlobalId()
+        assert (product.getGlobalId()
                 .equals(ProductMock.globalId));
-        assert (productObject.getName()
+        assert (product.getName()
                 .equals(ProductMock.name));
     }
 
     @Test
     public void canSetAttributeProduct() {
-        Product productObject = new Product();
+        Product product = new Product();
+        Product asusDualGTX1060 = ProductMock.asusDualGTX1060();
+        
+        product.setId(asusDualGTX1060.getId());
+        product.setGlobalId(asusDualGTX1060.getGlobalId());
+        product.setName(asusDualGTX1060.getName());
 
-        productObject.setId(ProductMock.id);
-        productObject.setGlobalId(ProductMock.globalId);
-        productObject.setName(ProductMock.name);
-
-        assert (productObject.getId()
-                .equals(ProductMock.id));
-        assert (productObject.getGlobalId()
-                .equals(ProductMock.globalId));
-        assert (productObject.getName()
-                .equals(ProductMock.name));
+        assert (product.getId()
+                .equals(asusDualGTX1060.getId()));
+        assert (product.getGlobalId()
+                .equals(asusDualGTX1060.getGlobalId()));
+        assert (product.getName()
+                .equals(asusDualGTX1060.getName()));
     }
 }
